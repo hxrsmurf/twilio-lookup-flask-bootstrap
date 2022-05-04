@@ -1,0 +1,22 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+  <div class="container" style="margin-top:30px">
+    <form action="/search" method="post">
+        <div class="row">
+            <div class="form-group col col-xs-3">
+                <label for="number">Phone Number</label>
+                <input type="text" class="form-control" id="number" aria-describedby="number" placeholder="Enter phone number" name="number">
+            </div>
+                <div class="col col-xs-3" style="margin-top:25px">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+        </div>
+      </form>
+  </div>
+
+  {% if lookup_result %}
+        {% include "lookup_results.html" %}
+  {% endif %}
+
+  {% endblock %}

@@ -22,5 +22,3 @@ def number_lookup(number):
     }
     
     return lookup_result
-
-print(number_lookup(''))
