@@ -1,7 +1,9 @@
 def credentials():
     credentials = {
-        'sid' : 'example',
-        'secret' : 'example'
+        'account': '',
+        'token': '',
+        'sid' : '',
+        'secret' : ''
     }
 
     return credentials
