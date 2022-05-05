@@ -1,4 +1,7 @@
 <div class="container" style="margin-top:30px">
+  {% if lookup_result == 'Invalid Number' %}
+    {{ lookup_result }}
+  {% else %}
     <table class="table table-striped">
         <thead>
           <tr>
@@ -15,4 +18,5 @@
           </tr>
         </tbody>
       </table>
+  {% endif %}
 </div>
